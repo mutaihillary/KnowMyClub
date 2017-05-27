@@ -1,110 +1,105 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:tools="http://schemas.android.com/tools"
     tools:context="com.example.android.knowmyclub.MainActivity">
 
-<LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical">
-
-    <EditText
-        android:id="@+id/editTextName"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:padding="16dp"
-        android:text="Enter Your Name Here"
-        android:textSize="16sp" />
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/textViewCoach"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:padding="16dp"
-        android:text="1. Who's the current coach for Arsenal?"
-        android:textColor="@color/colorPrimaryDark"
-        android:textSize="16sp" />
-
-    <RadioGroup
-        android:id="@+id/radioGroupCoach"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:paddingLeft="24dp">
-
-        <RadioButton
-            android:id="@+id/radioButtonWenger"
+        <EditText
+            android:id="@+id/editTextName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:onClick="radioButtonWengerClicked"
             android:padding="16dp"
-            android:text="Arsene Wenger"
+            android:text="@string/text_name"
             android:textSize="16sp" />
 
-        <RadioButton
-            android:id="@+id/radioButtonMourinho"
+        <TextView
+            android:id="@+id/textViewCoach"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:onClick="radioButtonJoseClicked"
             android:padding="16dp"
-            android:text="Jose Mourinho"
+            android:text="@string/text_coach"
+            android:textColor="@color/colorPrimaryDark"
             android:textSize="16sp" />
 
-        <RadioButton
-            android:id="@+id/radioButtonSir"
+        <RadioGroup
+            android:id="@+id/radioCoach"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="24dp">
+
+            <RadioButton
+                android:id="@+id/radioWenger"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/radio_wenger" />
+
+            <RadioButton
+                android:id="@+id/radioFerguson"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="@string/radio_ferguson" />
+
+            <RadioButton
+                android:id="@+id/radioMourinho"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/radio_mourinho" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/Cups"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:onClick="radioButtonAlexClicked"
             android:padding="16dp"
-            android:text="Alex Ferguson"
+            android:text="@string/text_cups"
+            android:textColor="@color/colorPrimaryDark"
             android:textSize="16sp" />
-    </RadioGroup>
 
-    <!--<TextView-->
-        <!--android:id="@+id/Cups"-->
-        <!--android:layout_width="match_parent"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--android:padding="16dp"-->
-        <!--android:text="2. Which of the following cups have been won by Arsenal since 2000?"-->
-        <!--android:textColor="@color/colorPrimaryDark"-->
-        <!--android:textSize="16sp" />-->
+        <CheckBox
+            android:id="@+id/checkBoxCarling"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:paddingBottom="16dp"
+            android:text="@string/carling_Cup"
+            android:textSize="16sp" />
 
-    <!--<CheckBox-->
-        <!--android:id="@+id/checkBoxCarling"-->
-        <!--android:layout_width="match_parent"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--android:paddingBottom="16dp"-->
-        <!--android:layout_marginLeft="24dp"-->
-        <!--android:text="Carling Cup"-->
-        <!--android:textSize="16sp" />-->
-    <!--<CheckBox-->
-        <!--android:id="@+id/checkBoxFA"-->
-        <!--android:layout_width="match_parent"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--android:paddingBottom="16dp"-->
-        <!--android:layout_marginLeft="24dp"-->
-        <!--android:text="FA Cup"-->
-        <!--android:textSize="16sp" />-->
-    <!--<CheckBox-->
-        <!--android:id="@+id/checkBoxPremierLeague"-->
-        <!--android:layout_width="match_parent"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--android:paddingBottom="16dp"-->
-        <!--android:layout_marginLeft="24dp"-->
-        <!--android:text="Premier League"-->
-        <!--android:textSize="16sp" />-->
-    <!--<CheckBox-->
-        <!--android:id="@+id/checkBoxChampion"-->
-        <!--android:layout_width="match_parent"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--android:paddingBottom="16dp"-->
-        <!--android:layout_marginLeft="24dp"-->
-        <!--android:text="Champion League"-->
-        <!--android:textSize="16sp" />-->
-    <!--<TextView-->
+        <CheckBox
+            android:id="@+id/checkBoxFA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:paddingBottom="16dp"
+            android:text="@string/fa_Cup"
+            android:textSize="16sp" />
+
+        <CheckBox
+            android:id="@+id/checkBoxPremierLeague"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:paddingBottom="16dp"
+            android:text="@string/premier_League"
+            android:textSize="16sp" />
+
+        <CheckBox
+            android:id="@+id/checkBoxChampion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:paddingBottom="16dp"
+            android:text="Champion League"
+            android:textSize="16sp" />
+        <!--<TextView-->
         <!--android:id="@+id/players"-->
         <!--android:layout_width="match_parent"-->
         <!--android:layout_height="wrap_content"-->
@@ -113,7 +108,7 @@
         <!--android:textColor="@color/colorPrimaryDark"-->
         <!--android:textSize="16sp" />-->
 
-    <!--<CheckBox-->
+        <!--<CheckBox-->
         <!--android:id="@+id/checkBoxWalcot"-->
         <!--android:layout_width="match_parent"-->
         <!--android:layout_height="wrap_content"-->
@@ -121,7 +116,7 @@
         <!--android:layout_marginLeft="24dp"-->
         <!--android:text="Walcot"-->
         <!--android:textSize="16sp" />-->
-    <!--<CheckBox-->
+        <!--<CheckBox-->
         <!--android:id="@+id/checkBoxSachez"-->
         <!--android:layout_width="match_parent"-->
         <!--android:layout_height="wrap_content"-->
@@ -129,7 +124,7 @@
         <!--android:layout_marginLeft="24dp"-->
         <!--android:text="Sachez"-->
         <!--android:textSize="16sp" />-->
-    <!--<CheckBox-->
+        <!--<CheckBox-->
         <!--android:id="@+id/checkBoxWilshere"-->
         <!--android:layout_width="match_parent"-->
         <!--android:layout_height="wrap_content"-->
@@ -137,7 +132,7 @@
         <!--android:layout_marginLeft="24dp"-->
         <!--android:text="Wilshere"-->
         <!--android:textSize="16sp" />-->
-    <!--<CheckBox-->
+        <!--<CheckBox-->
         <!--android:id="@+id/checkBoxMessi"-->
         <!--android:layout_width="match_parent"-->
         <!--android:layout_height="wrap_content"-->
@@ -146,7 +141,7 @@
         <!--android:text="Messi"-->
         <!--android:textSize="16sp" />-->
 
-    <!--<TextView-->
+        <!--<TextView-->
         <!--android:id="@+id/textViewStadium"-->
         <!--android:layout_width="match_parent"-->
         <!--android:layout_height="wrap_content"-->
@@ -155,39 +150,37 @@
         <!--android:textColor="@color/colorPrimaryDark"-->
         <!--android:textSize="16sp" />-->
 
-    <!--<RadioGroup-->
+        <!--<RadioGroup-->
         <!--android:layout_width="match_parent"-->
         <!--android:layout_height="wrap_content"-->
         <!--android:orientation="vertical"-->
         <!--android:paddingLeft="24dp">-->
 
         <!--<RadioButton-->
-            <!--android:id="@+id/radioButtonHighbury"-->
-            <!--android:layout_width="match_parent"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--android:onClick="radioButtonWengerClicked"-->
-            <!--android:padding="16dp"-->
-            <!--android:text="Highbury Stadium"-->
-            <!--android:textSize="16sp" />-->
+        <!--android:id="@+id/radioButtonHighbury"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:onClick="radioButtonWengerClicked"-->
+        <!--android:padding="16dp"-->
+        <!--android:text="Highbury Stadium"-->
+        <!--android:textSize="16sp" />-->
 
         <!--<RadioButton-->
-            <!--android:id="@+id/radioButtonEmirates"-->
-            <!--android:layout_width="match_parent"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--android:onClick="radioButtonJoseClicked"-->
-            <!--android:padding="16dp"-->
-            <!--android:text="Emirates Stadium"-->
-            <!--android:textSize="16sp" />-->
+        <!--android:id="@+id/radioButtonEmirates"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:onClick="radioButtonJoseClicked"-->
+        <!--android:padding="16dp"-->
+        <!--android:text="Emirates Stadium"-->
+        <!--android:textSize="16sp" />-->
 
-    <!--</RadioGroup>-->
+        <!--</RadioGroup>-->
 
-    <Button
-        android:id="@+id/buttonSubmit"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:padding="16dp"
-        android:text="Submit"
-        android:textSize="16sp" />
-</LinearLayout>
+        <Button
+            android:id="@+id/btnSubmit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_submit" />
+    </LinearLayout>
 
 </ScrollView>

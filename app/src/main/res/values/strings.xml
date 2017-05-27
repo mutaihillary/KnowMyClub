@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">KnowMyClub</string>
+    <string name="text_name">Enter Your Name Here</string>
+    <string name="text_coach">"1. Who's the current coach for Arsenal?"</string>
+    <string name="radio_wenger">Wenger</string>
+    <string name="radio_ferguson">Ferguson</string>
+    <string name="radio_mourinho">Mourinho</string>
+    <string name="btn_submit">Display</string>
+    <string name="text_cups">2. Which of the following cups have been won by Arsenal since 2000?</string>
+    <string name="carling_Cup">Carling Cup</string>
+    <string name="fa_Cup">FA Cup</string>
+    <string name="premier_League">Premier League Cup</string>
 </resources>
