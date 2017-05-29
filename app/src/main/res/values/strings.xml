@@ -1,13 +1,14 @@
 <resources>
-    <string name="app_name">KnowMyClub</string>
-    <string name="text_name">Enter Your Name Here</string>
-    <string name="text_coach">"1. Who's the current coach for Arsenal?"</string>
-    <string name="radio_wenger">Wenger</string>
-    <string name="radio_ferguson">Ferguson</string>
-    <string name="radio_mourinho">Mourinho</string>
-    <string name="btn_submit">Display</string>
-    <string name="text_cups">2. Which of the following cups have been won by Arsenal since 2000?</string>
-    <string name="carling_Cup">Carling Cup</string>
-    <string name="fa_Cup">FA Cup</string>
-    <string name="premier_League">Premier League Cup</string>
+    <string name="app_name" translatable="false">KnowMyClub</string>
+    <string name="text_name" translatable="false">Enter Your Name Here</string>
+    <string name="text_coach" translatable="false">"1. Who's the current coach for Arsenal?"</string>
+    <string name="radio_wenger" translatable="false">Wenger</string>
+    <string name="radio_ferguson" translatable="false">Ferguson</string>
+    <string name="radio_mourinho" translatable="false">Mourinho</string>
+    <string name="btn_submit" translatable="false">Display</string>
+    <string name="text_cups" translatable="false">2. Which cups have been won by Arsenal since 2000?</string>
+    <string name="carling_Cup" translatable="false">Carling Cup</string>
+    <string name="fa_Cup" translatable="false">FA Cup</string>
+    <string name="premier_League" translatable="false">Premier League Cup</string>
+    <string name="champion_League" translatable="false">Champion League Cup</string>
 </resources>
