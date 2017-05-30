@@ -11,4 +11,13 @@
     <string name="fa_Cup" translatable="false">FA Cup</string>
     <string name="premier_League" translatable="false">Premier League Cup</string>
     <string name="champion_League" translatable="false">Champion League Cup</string>
+    <string name="text_players" translatable="false">"3. Who's among the following are Arsenal's players?"</string>
+    <string name="text_walcot" translatable="false">Walcot</string>
+    <string name="text_sachez" translatable="false">Sachez</string>
+    <string name="text_wilshere" translatable="false">Wilshere</string>
+    <string name="text_messi" translatable="false">"Messi</string>
+
+
+
+
 </resources>

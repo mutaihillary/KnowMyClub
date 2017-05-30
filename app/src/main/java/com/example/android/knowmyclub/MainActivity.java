@@ -17,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
 
     private RadioGroup radioCoachGroup;
     private RadioButton radioCoachButton;
-    private CheckBox checkBoxCarling, checkBoxFA, checkBoxPremierLeague, checkBoxChampion;
+    private CheckBox checkBoxCarling, checkBoxFA, checkBoxPremierLeague, checkBoxChampion, checkBoxWalcot, checkBoxSachez, checkBoxWilshere, checkBoxMessi;
     private Button btnSubmit;
 
     @Override
@@ -27,6 +27,7 @@ public class MainActivity extends AppCompatActivity {
 
         addListenerOnButton();
         addListenerOncheckBoxCarling();
+        addListenerOncheckBoxWalcot();
 
     }
 
@@ -35,9 +36,13 @@ public class MainActivity extends AppCompatActivity {
         radioCoachGroup = (RadioGroup) findViewById(R.id.radioCoach);
         btnSubmit = (Button) findViewById(R.id.btnSubmit);
         checkBoxCarling = (CheckBox) findViewById(R.id.checkBoxCarling);
-        checkBoxFA = (CheckBox) findViewById(R.id.checkBoxFA);
+
         checkBoxPremierLeague = (CheckBox) findViewById(R.id.checkBoxPremierLeague);
         checkBoxChampion = (CheckBox) findViewById(R.id.checkBoxChampion);
+        checkBoxWalcot = (CheckBox) findViewById(R.id.checkBoxWalcot);checkBoxFA = (CheckBox) findViewById(R.id.checkBoxFA);
+        checkBoxSachez = (CheckBox) findViewById(R.id.checkBoxSachez);
+        checkBoxWilshere = (CheckBox) findViewById(R.id.checkBoxWilshere);
+        checkBoxMessi = (CheckBox) findViewById(R.id.checkBoxMessi);
         btnSubmit = (Button) findViewById(R.id.btnSubmit);
 
         btnSubmit.setOnClickListener(new OnClickListener() {
@@ -78,6 +83,33 @@ public class MainActivity extends AppCompatActivity {
                 result.append("\nFA Cup check : ").append(checkBoxFA.isChecked());
                 result.append("\nPremier League check :").append(checkBoxPremierLeague.isChecked());
                 result.append("\nChampion League check :").append(checkBoxChampion.isChecked());
+
+                Toast.makeText(MainActivity.this, result.toString(),
+                        Toast.LENGTH_LONG).show();
+            }
+        });
+
+    }
+
+    public void addListenerOncheckBoxWalcot() {
+
+        checkBoxWalcot = (CheckBox) findViewById(R.id.checkBoxWalcot);
+
+        checkBoxWalcot.setOnClickListener(new OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                //is checkBoxWalcot checked?
+                if (((CheckBox) v).isChecked()) {
+                    Toast.makeText(MainActivity.this,
+                            "Yes, Walcot)", Toast.LENGTH_LONG).show();
+                }
+
+                StringBuffer result = new StringBuffer();
+                result.append("Walcot check : ").append(checkBoxWalcot.isChecked());
+                result.append("\nSachez check : ").append(checkBoxSachez.isChecked());
+                result.append("\nWilshere check :").append(checkBoxWilshere.isChecked());
+                result.append("\nMessi check :").append(checkBoxMessi.isChecked());
 
                 Toast.makeText(MainActivity.this, result.toString(),
                         Toast.LENGTH_LONG).show();
