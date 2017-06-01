@@ -15,8 +15,8 @@
             android:id="@+id/editTextName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="16dp"
             android:hint="@string/text_name"
+            android:padding="16dp"
             android:textSize="16sp" />
 
         <TextView
@@ -98,80 +98,82 @@
             android:paddingBottom="16dp"
             android:text="@string/champion_League"
             android:textSize="16sp" />
-        <TextView
-        android:id="@+id/players"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:padding="16dp"
-        android:hint="@string/text_players"
-        android:textColor="@color/colorPrimaryDark"
-        android:textSize="16sp" />
-
-        <CheckBox
-        android:id="@+id/checkBoxWalcot"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:paddingBottom="16dp"
-        android:layout_marginLeft="24dp"
-        android:text="@string/text_walcot"
-        android:textSize="16sp" />
-        <CheckBox
-        android:id="@+id/checkBoxSachez"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:paddingBottom="16dp"
-        android:layout_marginLeft="24dp"
-        android:text="@string/text_sachez"
-        android:textSize="16sp" />
-        <CheckBox
-        android:id="@+id/checkBoxWilshere"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:paddingBottom="16dp"
-        android:layout_marginLeft="24dp"
-        android:text="@string/text_wilshere"
-        android:textSize="16sp" />
-        <CheckBox
-        android:id="@+id/checkBoxMessi"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:paddingBottom="16dp"
-        android:layout_marginLeft="24dp"
-        android:text="@string/text_messi"
-        android:textSize="16sp" />
 
         <TextView
-        android:id="@+id/textViewStadium"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:padding="16dp"
-        android:text="4. What is the name of previous Arsenal Stadium?"
-        android:textColor="@color/colorPrimaryDark"
-        android:textSize="16sp" />
+            android:id="@+id/players"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/text_players"
+            android:padding="16dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="16sp" />
+
+        <CheckBox
+            android:id="@+id/checkBoxWalcot"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:paddingBottom="16dp"
+            android:text="@string/text_walcot"
+            android:textSize="16sp" />
+
+        <CheckBox
+            android:id="@+id/checkBoxSachez"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:paddingBottom="16dp"
+            android:text="@string/text_sachez"
+            android:textSize="16sp" />
+
+        <CheckBox
+            android:id="@+id/checkBoxWilshere"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:paddingBottom="16dp"
+            android:text="@string/text_wilshere"
+            android:textSize="16sp" />
+
+        <CheckBox
+            android:id="@+id/checkBoxMessi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:paddingBottom="16dp"
+            android:text="@string/text_messi"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/textViewStadium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:text="4. What is the name of previous Arsenal Stadium?"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="16sp" />
 
         <RadioGroup
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:paddingLeft="24dp">
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="24dp">
 
-        <RadioButton
-        android:id="@+id/radioButtonHighbury"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:onClick="radioButtonWengerClicked"
-        android:padding="16dp"
-        android:text="Highbury Stadium"
-        android:textSize="16sp" />
+            <RadioButton
+                android:id="@+id/radioButtonHighbury"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:text="@string/radio_highbury"
+                android:textSize="16sp" />
 
-        <RadioButton
-        android:id="@+id/radioButtonEmirates"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:onClick="radioButtonJoseClicked"
-        android:padding="16dp"
-        android:text="Emirates Stadium"
-        android:textSize="16sp" />
+            <RadioButton
+                android:id="@+id/radioButtonEmirates"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:text="@string/radio_emirate"
+                android:textSize="16sp" />
 
         </RadioGroup>
 
@@ -179,7 +181,7 @@
             android:id="@+id/btnSubmit"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/btn_submit" />
+            android:text="@string/button_submit" />
     </LinearLayout>
 
 </ScrollView>
