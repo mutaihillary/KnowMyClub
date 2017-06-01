@@ -18,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
     private RadioGroup radioCoachGroup;
     private RadioButton radioCoachButton;
     private CheckBox checkBoxCarling, checkBoxFA, checkBoxPremierLeague, checkBoxChampion, checkBoxWalcot, checkBoxSachez, checkBoxWilshere, checkBoxMessi;
-    private Button btnSubmit;
+    private Button buttonSubmit;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
     public void addListenerOnButton() {
 
         radioCoachGroup = (RadioGroup) findViewById(R.id.radioCoach);
-        btnSubmit = (Button) findViewById(R.id.btnSubmit);
+        buttonSubmit = (Button) findViewById(R.id.btnSubmit);
         checkBoxCarling = (CheckBox) findViewById(R.id.checkBoxCarling);
 
         checkBoxPremierLeague = (CheckBox) findViewById(R.id.checkBoxPremierLeague);
@@ -43,9 +43,9 @@ public class MainActivity extends AppCompatActivity {
         checkBoxSachez = (CheckBox) findViewById(R.id.checkBoxSachez);
         checkBoxWilshere = (CheckBox) findViewById(R.id.checkBoxWilshere);
         checkBoxMessi = (CheckBox) findViewById(R.id.checkBoxMessi);
-        btnSubmit = (Button) findViewById(R.id.btnSubmit);
+        buttonSubmit = (Button) findViewById(R.id.btnSubmit);
 
-        btnSubmit.setOnClickListener(new OnClickListener() {
+        buttonSubmit.setOnClickListener(new OnClickListener() {
 
             @Override
             public void onClick(View v) {
