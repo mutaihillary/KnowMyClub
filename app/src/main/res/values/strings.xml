@@ -5,7 +5,7 @@
     <string name="radio_wenger" translatable="false">Wenger</string>
     <string name="radio_ferguson" translatable="false">Ferguson</string>
     <string name="radio_mourinho" translatable="false">Mourinho</string>
-    <string name="btn_submit" translatable="false">Display</string>
+    <string name="button_submit" translatable="false">Submit</string>
     <string name="text_cups" translatable="false">2. Which cups have been won by Arsenal since 2000?</string>
     <string name="carling_Cup" translatable="false">Carling Cup</string>
     <string name="fa_Cup" translatable="false">FA Cup</string>
@@ -16,6 +16,9 @@
     <string name="text_sachez" translatable="false">Sachez</string>
     <string name="text_wilshere" translatable="false">Wilshere</string>
     <string name="text_messi" translatable="false">"Messi</string>
+    <string name="radio_highbury" translatable="false">Highbury Stadium</string>
+    <string name="radio_emirate" translatable="false">Emirates Stadium</string>
+
 
 
 
